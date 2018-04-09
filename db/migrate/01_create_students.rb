@@ -5,9 +5,9 @@ class CreateStudents < ActiveRecord::Migration[5.1]
   #     name TEXT
   #   )
   #   SQL
-  # 
+  #
   #   ActiveRecord::Base.connection.execute(sql)
-  sql = 'DROP TABLE IF NOT EXISTS students'
+  sql = 'DROP TABLE IF EXISTS students'
   ActiveRecord::Base.conection.execute(sql)
 
     def change
